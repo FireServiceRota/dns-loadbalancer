@@ -26,11 +26,10 @@ class DNSLoadBalancer
   private
 
   def resolve(host)
-    return host.to_s if IPAddress.valid?(host.to_s)
+    return host.to_s if IPAddress.valid_ipv4?(host.to_s)
 
-    dns_obj = Resolv::DNS.new(nameserver: ['1.1.1.1', '8.8.8.8', '8.8.4.4'])
-    resources = dns_obj.getresources(host, Resolv::DNS::Resource::IN::A)
-    resources.map(&:address).map(&:to_s)
+    ipaddresses = Resolv.getaddresses(host)
+    ipaddresses.select { |ip| IPAddress.valid_ipv4?(ip) }
   end
 
   def find_closest(ip_addresses)

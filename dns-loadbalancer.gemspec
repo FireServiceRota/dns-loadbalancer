@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dns-loadbalancer'
-  s.version     = '1.0.0'
+  s.version     = '1.1.0'
   s.summary     = 'Gem for resolving a DNS host to the closest IP address'
   s.authors     = ['Ruben Stranders']
   s.email       = 'ruben@fireservicerota.com'

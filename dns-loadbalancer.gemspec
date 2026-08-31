@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'dns-loadbalancer'
-  s.version     = '1.1.0'
+  s.version     = '1.1.1'
   s.summary     = 'Gem for resolving a DNS host to the closest IP address'
   s.authors     = ['Ruben Stranders']
   s.email       = 'ruben@fireservicerota.com'
@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.add_runtime_dependency 'ipaddress', ['~>0.8']
   s.add_runtime_dependency 'net-ping', ['~>2.0']
-  s.add_runtime_dependency 'resolv', ['~>0.2']
+  s.add_runtime_dependency 'resolv', ['~>0.3.2']
 end

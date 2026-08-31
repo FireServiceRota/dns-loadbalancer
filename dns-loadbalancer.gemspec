@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.add_runtime_dependency 'ipaddress', ['~>0.8']
   s.add_runtime_dependency 'net-ping', ['~>2.0']
-  s.add_runtime_dependency 'resolv', ['~>0.2']
+  s.add_runtime_dependency 'resolv', ['~>0.3.2']
 end
